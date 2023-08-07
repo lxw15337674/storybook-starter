@@ -1,0 +1,6 @@
+src
+.storybook
+node_modules
+storybook-static
+.git
+.cache

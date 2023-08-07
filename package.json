@@ -1,0 +1,60 @@
+{
+  "name": "www-components",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "dev": "pnpm run storybook ",
+    "start": "pnpm run storybook",
+    "build-storybook": "storybook build",
+    "storybook": "storybook dev  -p 6006 -s public",
+    "serve-storybook": "serve storybook-static",
+    "build": "father build",
+    "publish": " np --no-cleanup --no-tests"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "source": "src/index.tsx",
+  "types": "dist/esm/index.d.ts",
+  "license": "ISC",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.18.9",
+    "@babel/preset-react": "^7.18.6",
+    "@storybook/addon-essentials": "^7.2.1",
+    "@storybook/addon-interactions": "^7.2.1",
+    "@storybook/addon-links": "^7.2.1",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.2.1",
+    "@storybook/react": "^7.2.1",
+    "@storybook/react-vite": "^7.2.1",
+    "@storybook/testing-library": "^0.2.0",
+    "@types/lodash": "^4.14.184",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.34.0",
+    "eslint": "^8.24.0",
+    "eslint-config-alloy": "^5.1.0",
+    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "father": "^4.3.0",
+    "lint-staged": "^13.0.3",
+    "np": "^8.0.4",
+    "prettier": "^3.0.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.2.1"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "esnext",
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "composite": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "moduleResolution": "node",
+    "baseUrl": "./dist",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "preserveSymlinks": true,
+    "jsx": "react",
+    "lib": [
+      "dom",
+      "es2017"
+    ],
+    "rootDir": "./src",
+    "outDir": "./dist/types",
+    "emitDeclarationOnly": true,
+    "jsxFragmentFactory": "Fragment",
+    "jsxFactory": "React.createElement",
+    "paths": {
+      "@qunhe/budget-components": [
+        "src"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*",
+  ]
+}
