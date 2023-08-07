@@ -1,7 +1,7 @@
 {
-  "name": "www-components",
-  "version": "0.1.0",
-  "description": "",
+  "name": "storybook-starter",
+  "version": "1.0.0",
+  "description": "A react components library starter kit built with React, TypeScript, Storybook, EsLint, Prettier, Jest, TailwindCSS, & Webpack. Compatible with Google Chrome, Mozilla Firefox, Brave, and Microsoft Edge.",
   "scripts": {
     "dev": "pnpm run storybook ",
     "start": "pnpm run storybook",
