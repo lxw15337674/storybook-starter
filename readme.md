@@ -2,7 +2,7 @@
 
 A react components library starter kit built with React, TypeScript。
 
-docs: storybook
+docs: storybook@v7
 
 docs-publish: vercel
 
